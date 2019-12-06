@@ -1,0 +1,4 @@
+Multiplication of Matrix and Vector is
+68 167 266 
+Multiplication of Vector and Matrix is
+138 171 204 
