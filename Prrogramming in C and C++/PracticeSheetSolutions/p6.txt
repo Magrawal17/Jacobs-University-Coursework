@@ -1,8 +1,0 @@
-called with par = 4                                                                                                            
-called with par = 3                                                                                                            
-called with par = 2                                                                                                            
-called with par = 1                                                                                                            
-returning 2                                                                                                                    
-returning 6                                                                                                                    
-returning 24                                                                                                                   
-24
