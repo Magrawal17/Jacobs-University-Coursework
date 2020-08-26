@@ -1,8 +1,0 @@
-a) When you comment out namespace std we have used many standard functions such as cin and cout without the name space.
-The compiler cannot read cin just like that. The correct convention is to use std::cin. The same follows for
-other functions as well therfore either we should decalre all the cin, cout and other librbary functions with
-std:: or just use namespace std;.
-
-b) When we comment out Critter:: the compiler will not be able to diffrentiate between which function we are talking.
-The function that we are talking about is inside the class therfore we need to specify the class therfore we add 
-Critter::.

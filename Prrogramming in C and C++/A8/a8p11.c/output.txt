@@ -1,6 +1,0 @@
-The first file's
-content.
-The second file's content.
-The 
-third file's 
-content.
