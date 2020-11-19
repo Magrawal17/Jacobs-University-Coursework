@@ -1,0 +1,15 @@
+Jackson Whiteley
+Sheet 2
+
+1.
+	Text segment: Executable instructions for the program
+	Data segment: m[] and p (not its value, thats dynamic) are stored here
+	Heap segment: The value of p
+	Stack segment: The stack frames from calls to strdup which will contain
+				     things like the return address, frame pointer, s, p and len
+
+2.
+	see xargs.c for the general assignment, it is the most fine tooned and
+	tested, however I did manage to complete the bonus -j portion which you
+	can find in xargsBonus.c. It works but prints out of order (use xargs.c for
+	grading everything exept the -j part if possible).
