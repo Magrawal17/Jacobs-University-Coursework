@@ -1,0 +1,1 @@
+sum = 2.000000difference = 0.000000product = 1.000000division = 1.000000
