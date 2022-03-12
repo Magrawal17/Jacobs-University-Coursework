@@ -67,7 +67,8 @@ sudo pip3 install virtualenv
 
 ```bash
 # Clone the repo.
-# Obviously this wont work for you students, for you to run it you need download the entire repositary and then go to this folder where it is. But your readme should start with git clone for sure.
+# Obviously this wont work for you students, for you to run it you need download the entire repositary.
+# Then go to this folder where it is. But your readme for the project should start with git clone for sure.
 # git clone https://github.com/lorenzorota/se-02-team-15.git -> only for sample
 cd se-02-team-15/
 
