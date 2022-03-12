@@ -1,3 +1,6 @@
+# Students taking this course in Spring 2022, Please remember to take this sample only for reference. Some of the frameworks used here have been not been permiteed for this course so please refer to the TA's or Proffesor. Additionally this is a sample when you are not able to host it somewhere, this is how the step by step insructions should be for others to use it. 
+
+
 # README for beergame
 
 ### Contributors
@@ -63,8 +66,9 @@ sudo pip3 install virtualenv
 ## Installation Guide
 
 ```bash
-# Clone the repo
-git clone https://github.com/lorenzorota/se-02-team-15.git
+# Clone the repo.
+# Obviously this wont work for you students, for you to run it you need download the entire repositary and then go to this folder where it is. But your readme should start with git clone for sure.
+# git clone https://github.com/lorenzorota/se-02-team-15.git -> only for sample
 cd se-02-team-15/
 
 # Create virtual environment
