@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mahiem.css') }}">
+<div class="col-8">
+    <div style="width:800px; margin:0 auto;">
+    <h2 style="text-align:center"> Welcome to The Beer Game </h2>
+    <br>
+    <h3 style="text-align:center">Choose a role to start the game</h3>
+    <a class="button" href="{{ url_for('login')}}">Instructor</a>
+    <a class="button" href="{{ url_for('player_login')}}">Player</a>
+</div>   
+</div>
+
+
+{% endblock %}

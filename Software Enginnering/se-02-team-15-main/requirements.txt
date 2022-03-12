@@ -1,0 +1,10 @@
+click==7.1.2
+Flask==1.1.2
+Flask-MySQLdb==0.2.0
+itsdangerous==1.1.0
+Jinja2==2.11.3
+MarkupSafe==1.1.1
+mysqlclient==1.4.6
+Werkzeug==1.0.1
+PyYaml==5.4.1
+Flask-Selfdoc==1.2.3

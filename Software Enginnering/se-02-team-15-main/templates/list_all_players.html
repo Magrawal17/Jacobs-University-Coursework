@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mahiem.css') }}">
+<h1 style="text-align:center"> List of Players</h1>
+<br>
+<br>
+<div style="width:800px; margin:0 auto;">
+<table class="w3-table-all player-list-table">
+    <tr>
+        <th>Username</th>
+        <th>Password</th>
+    </tr>
+    {% for player in players %}
+    <tr>
+        <td>{{ player[0] }}</td>
+        <td>{{ player[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<br>
+Click the link below to open player login page to enter this credentails
+<a class="button" href="{{ url_for('player_login')}}" target="_blank">Player</a>
+</div>
+
+
+
+
+{% endblock %}

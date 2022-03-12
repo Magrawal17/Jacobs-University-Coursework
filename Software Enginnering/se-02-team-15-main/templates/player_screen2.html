@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<div style="background-color: white;">
+  <h1 style="text-align: center;">Beer Distribution Game </h1>
+
+  <nav class="navbar navbar-center">
+    <div class="container-fluid">
+      <h2>Player Role: {{ player_role }} </h2>
+      <h3 style="text-align: center;">Week Number 1</h3>
+    </div>
+  </nav>
+
+  <div class="row" id="board">
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h3 class="panel-title" id="downstreamRole">Order from Previous Week</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-6">
+              <p><strong>Incoming<br />Order:</strong></p>
+              <p class="unit-amount" id="downstreamOrders"><span id="dsOrdrAmt">12</span><small>units</small></p>
+            </div>
+            <div class="col-xs-6">
+              <p><strong>Outgoing<br />Delivery:</strong></p>
+              <p class="unit-amount" id="downstreamShipments"><span id="dsShpAmt">8</span><small>units</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-1">
+
+    </div>
+    <div class="col-sm-5">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title" id="userRole">Inventory</h3>
+        </div>
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-4">
+              <p><strong>Holding Cost ($0.5):</strong></p>
+              <p class="unit-amount-sm" id="curCost">$<span id="cstAmt">4</span></p>
+            </div>
+            <div class="col-xs-4">
+              <p><strong>Total No. of Units</strong></p>
+              <p class="unit-amount" id="curInventory"><span id="inventoryAmt">8</span><small>units</small></p>
+            </div>
+            <div class="col-xs-4">
+              <p><strong>Backlog:</strong></p>
+              <p class="unit-amount" id="curBacklog"><span id="bklgAmt">0</span><small>units</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="row" id="board">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4">
+      <div class="panel panel-warning">
+        <div class="panel-heading">
+          <h3 class="panel-title" id="upstreamRole"> Next Order</h3>
+        </div>
+        <div class="panel-body">
+
+          <form role="form">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" data-error="Invalid unit quanity" class="form-control" id="formOrderAmount"
+                  placeholder="Quantity" required>
+                <span class="input-group-btn">
+                  <button class="btn btn-warning" type="submit" id="btnOrder" onclick="createGame()">Order</button>
+                </span>
+              </div>
+
+          </form>
+        </div>
+      </div>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+</div>
+  {% endblock %}

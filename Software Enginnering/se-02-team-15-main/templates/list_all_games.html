@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mahiem.css') }}">
+<div style="width:800px; margin:0 auto;">
+<a class="button" href="{{ url_for('create_game') }}">Create New Game</a>
+
+{% if games %}
+<h1 style="text-align:center"> List of Games</h1>
+
+<table class="w3-table-all player-list-table">
+    <br>
+    <br>
+    <tr>
+        <th>Game ID</th>
+        <th>Player Credentials</th>
+    </tr>
+    {% for game in games %}
+    <tr>
+        <td>{{ game[0] }}</td>
+        <td><u><a href="{{ url_for('view_all_players', game_id=game[0]) }}">View</a></u></td>
+    </tr>
+    {% endfor %}
+
+</table>
+{% endif %}
+
+</div>
+
+{% endblock %}

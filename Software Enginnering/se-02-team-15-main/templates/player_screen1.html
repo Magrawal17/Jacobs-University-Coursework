@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mahiem.css') }}">
+<div class="col-8" style="width:800px; margin:0 auto;">
+<br>
+<br>
+  <h2 style="text-align:center">Select Role</h2>
+<br>
+<br>
+{% if retailer_present %}
+<a class="button" href="{{ url_for('player_screen2', player_role='RETAILER') }}">Retailer</a>
+{% endif %}
+
+{% if wholesaler_present %}
+<a class="button" href="{{ url_for('player_screen2', player_role='WHOLESALER') }}">Wholesaler</a>
+{% endif %}
+
+<a class="button" href="{{ url_for('player_screen2', player_role='DISTRIBUTOR') }}">Distributor</a>
+
+<a class="button" href="{{ url_for('player_screen2', player_role='FACTORY') }}">Factory</a>
+</div>
+  {% endblock %}

@@ -1,0 +1,45 @@
+.navbar_menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  overflow: scroll;
+}
+html {
+  height: 100%;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  background-color: purple;
+}
+h2 {
+  text-align: center;
+  color: black;
+}
+h3 {
+  text-align: center;
+  color: black;
+}
+p {
+  color: black;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+    <section class="role">
+        <p id="week-number"></p>
+        <p id="predecessor"></p>
+        <p id="successor"></p>
+        <p id="inventory"></p>
+        <p id="cost"></p>
+        
+        PLEASE WAIT FOR ALL THE OTHER PARTNERS TO COMPLETE THEIR WEEKLY ORDERING AND SHIPPING POLICIES.
+        Once completed you will see a link in the bottom window to proceed to next week #. Please click that to proceed.
+    </section>
+
+    <section class="history">
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Week</th>
+                    <th>Inv/Bk</th>
+                    <th>Demand</th>
+                    <th>Inco. Ship</th>
+                    <th>Out Ship</th>
+                    <th>Order placed</th>
+                    <th>Current cost</th>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section class="graph">
+        <div class="graph-buttons">--buttons--</div>
+        Supply Chain Settings for --role--
+        <p id="holding-cost"></p>
+        <p id="backlog-cost"></p>
+        <p id="downstream-player"></p>
+        <p id="upstream-player"></p>
+        <p id="shipping-delay"></p>
+        <p id="info_delay"></p>
+    </section>
+
+    <section class="proceed">
+        --proceed buttom--
+    </section>
+{% endblock %}

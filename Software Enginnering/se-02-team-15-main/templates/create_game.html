@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+
+{% endblock %}
+
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/mahiem.css') }}">
+<div style="width:800px; margin:0 auto;">
+        <h2 style="text-align:center">Create A New Game! </h2>
+        <p style="text-align:center"> Enter the following values:</p>        
+        <br>
+                <br>
+<h1> </h1>
+
+
+
+
+<form action="{{ url_for('create_game') }}" method="post" class="w3-container">
+
+    <label for="session_length">Number of Rounds:</label>
+    <input class="w3-input" type="number" id="session_length" name="session_length" required><br>
+
+
+    <label for="holding_cost">Holding cost:</label>
+    <input class="w3-input" type="number" id="holding_cost" name="holding_cost" required><br>
+
+    <label for="backlog_cost">Backlog cost:</label>
+    <input class="w3-input" type="number" id="backlog_cost" name="backlog_cost" required><br>
+
+    <label for="wholesaler_present">Is wholesaler present?:</label>
+    <select class="w3-input" type="text" id="wholesaler_present" name="wholesaler_present">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+    </select> <br>
+
+    <label for="retailer_present">Is retailer present?:</label>
+    <select class="w3-input" type="text" id="retailer_present" name="retailer_present">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+    </select> <br>
+
+    <label for="info_sharing">Infosharing:</label>
+    <select class="w3-input" type="text" id="info_sharing" name="info_sharing">
+            <option value="Hide all">Hide all</option>
+            <option value="Show inventory">Show inventory</option>
+            <option value="Show customer demand">Show customer demand</option>
+            <option value="Show order">Show order </option>
+    </select> <br>
+    <input style="text-align:center" class="button" type="submit" value="Create Game">
+
+
+</form>
+</div>
+
+{% endblock %}
