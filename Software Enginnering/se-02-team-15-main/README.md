@@ -1,4 +1,4 @@
-# Students taking this course in Spring 2022, Please remember to take this sample only for reference. Some of the frameworks used here have been not been permiteed for this course so please refer to the TA's or Proffesor. Additionally this is a sample when you are not able to host it somewhere, this is how the step by step insructions should be for others to use it. 
+### Students taking this course in Spring 2022, Please remember to take this sample only for reference. Some of the frameworks used here have been not been permiteed for this course so please refer to the TA's or Proffesor. Additionally this is a sample when you are not able to host it somewhere, this is how the step by step insructions should be for others to use it. 
 
 
 # README for beergame
